@@ -11,6 +11,8 @@ body {
   justify-content: space-evenly;
   height: 100vh;
   width: 100vw;
+  max-height: 99%;
+  max-width: 99%;
 }
 .coolBeans {
   border: 2px solid currentColor;
@@ -64,8 +66,7 @@ body {
   
   border: 2px solid transparent;
   color: #4b0082;
-  transform: scale(1.05);
-  will-change: transform;
+  
 }
 
 
@@ -109,6 +110,8 @@ nav {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   width: 100vw;
+  max-width: 99%;
+  max-height: 99%;
   flex-direction: column;
 
  
