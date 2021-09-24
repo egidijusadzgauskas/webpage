@@ -137,12 +137,12 @@ nav {
   .comingSoon{
     height: 55%;
     align-self:auto;
-    font-size: 20px;
+    font-size: 40px;
     font-family:'Times New Roman', Times, serif;
     color: #440066;
   }
   .menu-text a {
-    font-size: 12px;
+    font-size: 25px;
     color: white;
     text-decoration: none;
   }
