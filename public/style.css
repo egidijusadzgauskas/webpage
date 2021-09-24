@@ -54,13 +54,74 @@ body {
 }
 
 .comingSoon{
-  font-size: 120px;
+  height: 55%;
+  align-self:auto;
+  font-size: 80px;
   font-family:'Times New Roman', Times, serif;
   color: #440066;
 }
 .comingSoon:hover{
+  
   border: 2px solid transparent;
   color: #4b0082;
   transform: scale(1.05);
   will-change: transform;
 }
+
+
+nav {
+  height: 45%;
+  align-self: baseline; 
+  justify-content:space-around;
+  position: relative; 
+  margin: 0px auto;
+  perspective: 2000px;
+  flex-wrap: wrap;
+  top: 3em;
+}
+
+.menu-item {
+  justify-content:space-around;
+  flex-wrap: nowrap;
+  color: white;
+  font-weight: 600;
+  perspective: 200px;
+  letter-spacing: 0.5px;
+  min-height: 7.5em;
+}
+
+.menu-text a {
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  
+  
+}
+
+.menu-text a:hover {
+  color: rgba(255,255,255,0.5);
+}
+
+.sideBody {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #102eff, #d2379b);
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+
+ 
+  
+  
+}
+
+  
+
+
+
+
+
+
+
+
