@@ -153,8 +153,45 @@ nav {
     font-family:'Times New Roman', Times, serif;
     color: #440066;
   }
+  .sideBody{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #102eff, #d2379b);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    max-width: 99%;
+    max-height: 99%;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85%;
+    height: 35%;
+    position: auto;
+  } 
+  .content{
+    
+    top: 5%;
+    left: 18%;
+    position: auto;
+  }
+  .portfolio{
   
+    left: 35%;
+    position: auto;
+    
+    
+  }
 }
+
+
+
 @keyframes bubble{
   0%{
     transform: translateY(0);
