@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-body {
+.main {
   background: rgb(63,94,251);
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   
@@ -14,51 +17,77 @@ body {
   max-height: 99%;
   max-width: 99%;
 }
-
-.coolBeans {
-  border: 2px solid currentColor;
-  border-radius: 3rem;
-  color: #440066;
-  font-family: roboto;
-  font-size: 4rem;
-  font-weight: 100;
-  overflow: hidden;
-  padding: 1rem 2rem;
-  position: relative;
-  text-decoration: none;
-  transition: 0.2s transform ease-in-out;
-  will-change: transform;
-  z-index: 0;
-}
-.coolBeans::after {
-  background-color: #ffff00;
-  border-radius: 3rem;
-  content: '';
-  display: block;
-  height: 100%;
+.interactive{
   width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #102eff, #d2379b);
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+
+}
+.navbar{
+  width: 85%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around ;
+}
+
+
+.content{
+  color: #fbfcfd;
+  position: relative;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+
+}
+h1{
+  font-size: 80px;
+  margin: 10px 0 30px;
+  line-height: 80px;
+}
+.portfolio{
+  
+  left: 52%;
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+h2{
+  color: #fbfcfd;
+  font-size: 20px;
+  margin: 10px 0 10px;
+  line-height: 20px;
+}
+
+
+
+
+.bubbles img{
+  width: 50px;
+  animation: bubble 7s linear infinite;
+}
+.bubbles{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-100%, 0) rotate(10deg);
-  transform-origin: top left;
-  transition: 0.2s transform ease-out;
-  will-change: transform;
-  z-index: -1;
+  bottom: -70px;
 }
-.coolBeans:hover::after {
-  transform: translate(0, 0);
-}
-.coolBeans:hover {
-  border: 2px solid transparent;
-  color: #4b0082;
-  transform: scale(1.05);
-  will-change: transform;
-}
+
 
 .comingSoon{
-  height: 55%;
-  align-self:auto;
+  
+  
+  align-self:center;
   font-size: 80px;
   font-family:'Times New Roman', Times, serif;
   color: #440066;
@@ -72,6 +101,7 @@ body {
 
 
 nav {
+  width: 85%;
   height: 45%;
   align-self: baseline; 
   justify-content:space-around;
@@ -82,27 +112,11 @@ nav {
   top: 3em;
 }
 
-.menu-item {
-  justify-content:space-around;
-  flex-wrap: nowrap;
-  color: white;
-  font-weight: 600;
-  perspective: 200px;
-  letter-spacing: 0.5px;
-  min-height: 7.5em;
-}
 
-.menu-text a {
-  font-size: 1em;
-  color: white;
-  text-decoration: none;
-  
-  
-}
 
-.menu-text a:hover {
-  color: rgba(255,255,255,0.5);
-}
+
+
+
 
 .sideBody {
   margin: 0;
@@ -113,7 +127,7 @@ nav {
   width: 100vw;
   max-width: 99%;
   max-height: 99%;
-  flex-direction: column;
+  flex-direction: unset;
 
  
   
@@ -122,7 +136,7 @@ nav {
 
 @media screen and (max-width: 1200px) 
 {
-  body {
+  .main {
     background: rgb(63,94,251);
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   flex-direction: column;
@@ -141,12 +155,53 @@ nav {
     font-family:'Times New Roman', Times, serif;
     color: #440066;
   }
-  .menu-text a {
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
+  
+}
+@keyframes bubble{
+  0%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50%{
+    
+    opacity: 1;
+  }
+  70%{
+    
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-80vh);
+    opacity: 0;
   }
 }
+.bubbles img:nth-child(1){
+  animation-delay: 2s;
+  width: 25px;
+}
+.bubbles img:nth-child(2){
+  animation-delay: 1s;
+  w
+}
+.bubbles img:nth-child(3){
+  animation-delay: 3s;
+  width: 25px;
+}
+.bubbles img:nth-child(4){
+  animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+  animation-delay: 6s;
+  width: 20px;
+}
+.bubbles img:nth-child(7){
+  animation-delay: 7s;
+  width: 35px;
+}
+
 
   
 
