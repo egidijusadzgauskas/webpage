@@ -1,17 +1,17 @@
 {
     "data": {
       "test1": {
-        "name": "test123",
+        "title": "test123",
         "description": "description",
         "link" : "https://egidijusadzgauskas.github.io"
       },
       "test2": {
-        "name": "test123",
+        "title": "test123",
         "description": "description",
         "link" : "https://egidijusadzgauskas.github.io"
       },
       "test3": {
-        "name": "test123",
+        "title": "test123",
         "description": "description",
         "link" : "https://egidijusadzgauskas.github.io"
       }
