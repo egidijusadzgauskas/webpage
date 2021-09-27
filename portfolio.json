@@ -1,19 +1,12 @@
-{
-    "data": {
-      "test1": {
-        "title": "test123",
-        "description": "description",
-        "link" : "https://egidijusadzgauskas.github.io"
-      },
-      "test2": {
-        "title": "test123",
-        "description": "description",
-        "link" : "https://egidijusadzgauskas.github.io"
-      },
-      "test3": {
-        "title": "test123",
-        "description": "description",
-        "link" : "https://egidijusadzgauskas.github.io"
-      }
-    }
-  }
+[{      "name": "test1",
+        "description": "sis bei tas",
+        "link" : "https://egidijusadzgauskas.github.io/webpage"},
+        {"name": "test2",
+        "description": "paieskos sistema",
+        "link" : "https://google.com"},
+        {"name": "test3",
+        "description": "soc tinklapis",
+        "link" : "https://facebook.com"}
+
+]
+  
