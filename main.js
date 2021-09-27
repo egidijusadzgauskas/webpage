@@ -13,7 +13,7 @@ function readTextFile(file, callback) {
 }
 
 //usage:
-readTextFile("/portfolio.json", function(text){
+readTextFile("https://egidijusadzgauskas.github.io/webpage/portfolio.json", function(text){
     var data = JSON.parse(text);
     
     for (let i = 0; i < data.length; i++) {
