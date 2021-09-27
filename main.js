@@ -20,8 +20,13 @@ readTextFile("https://egidijusadzgauskas.github.io/webpage/portfolio.json", func
         console.log(data[i].name);
         console.log(data[i].description);
         console.log(data[i].link);
-
       }
-    
-});
+    });
+
+let works = document.querySelector('works');
+let h2 = works.querySelector('title');
+function printName(h2) {
+for (let i = 0; i < data.lenght; i++)
+h2.textContent = data[i].name;
+}
 
