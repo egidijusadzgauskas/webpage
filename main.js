@@ -25,4 +25,3 @@ readTextFile("https://egidijusadzgauskas.github.io/webpage/portfolio.json", func
     
 });
 
-//
